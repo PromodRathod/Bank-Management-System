@@ -35,7 +35,7 @@ void main()
 }
 
 
-     void User()
+     void User()	//user option function, for creating a new account or for loggin 
      {
       puts("User Login");
       int a;
@@ -52,7 +52,7 @@ void main()
      }
 
 
-     void Staff()
+     void Staff()	//staff login function
      {
       char l[15],p[15],ac[15],pw[15],o[15];
       char lt[5]=".txt";
@@ -94,7 +94,7 @@ void main()
      }
 
 
-     void CNA()
+     void CNA()		//creating a new account for the client or the user
      {
       char n[20],ff[30],f[20],a[60],d[11],nt[20],r[20],p[15],s[20],nc[20];
       printf("\n\n\t\tCreate a New Account");
@@ -166,7 +166,7 @@ void main()
     }
 
 
-     void LA()
+     void LA()		//existing user login
      {
       puts("\n\n\t\tExisting Account Login\n");
       char a[20],b[20],ac[20],pw[20],z[20],nn[20];
@@ -207,7 +207,7 @@ void main()
       Uf(nn);
      }
 
-     void file(char NC[])
+     void file(char NC[])	//continued process of creating new account of a user
      {
        char aa[40]="18c37a61";
        char bb[20],cc[20],yy[40];
@@ -270,7 +270,7 @@ void main()
 	fclose(OT);
       }
 
-     void Uf(char NN[])
+     void Uf(char NN[])		//user menu once logged in
      {
       printf("\n\n\t\tWelcome to NetBanking\n\n");
       printf("\t1. Account Detials\n");
@@ -299,7 +299,7 @@ void main()
       }
      }
 
-     void AD()
+     void AD()		//user account details
      {
       char aa[20],ff[40],nc[20],f[20],a[100],d[15],nt[20],r[20],p[15],s[20];
       char b[10]=".txt";
@@ -334,7 +334,7 @@ void main()
       fclose(acc);
      }
 
-     void B(char NN[])
+     void B(char NN[])		//balance
      {
       char S[5]="B";
       char Z[5]=".txt";
@@ -354,7 +354,7 @@ void main()
       fclose(B);
      }
 
-     void W(char NN[])
+     void W(char NN[])		//withdrawal
      {
       char R[5]="B";
       char T[5]=".txt";
@@ -386,7 +386,7 @@ void main()
       printf("Amount Withdrawn Successfully\n");
      }
 
-     void D(char NN[])
+     void D(char NN[])		//deposit
      {
       char R[5]="B";
       char T[5]=".txt";
@@ -418,7 +418,7 @@ void main()
       printf("Amount Deposited Successfully\n");
      }
 
-     void OT(char NN[])
+     void OT(char NN[])		//request for changing any account detail of the customer
      {
       char a[10],ac[10],pw[20],p[20];
       char ff[40],nc[20],f[20],aa[100],d[10],nt[20],r[20],pp[15],s[20];
@@ -512,7 +512,7 @@ void main()
       }
      }
 
-     void TM(char NN[])
+     void TM(char NN[])		//transfer money
      {
       char S[5]="B";
       char Z[5]=".txt";
@@ -576,7 +576,7 @@ void main()
       }
      }
 
-     void SF()
+     void SF()		//staff can update details of any customer
      {
       char E[20],N[20],D[20],pw[20];
       double a;
